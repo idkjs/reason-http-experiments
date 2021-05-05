@@ -1,0 +1,22 @@
+{
+  "name": "my-first-app",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": ["BuckleScript"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.7.0",
+    "bs-platform": "^9.0.2"
+  },
+  "dependencies": {
+    "bs-node": "github:idkjs/bs-node"
+  },
+  "jest": {
+    "testMatch": ["**/__test__/**/*_test.bs.js"]
+  }
+}
